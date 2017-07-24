@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    </head>
+    <body>
+        <script type="text/javascript">
+            document.write("Welcome JavaScript! <br>");
+            document.write("Have a great week! <br>");
+            
+            ival = 23;
+            var iApples = 5;
+            iyear = prompt("What is the current year"); 
+            // prompt function will return what user types as a string
+            
+            birthYear = prompt("What is the car model year"); 
+            
+            document.write( "How old is the \"car\"? " 
+                    + (parseInt(iyear) - parseInt(birthYear) + 1 ) + "<Br>");
+            
+            try{
+            top = ['acd', 'b', 'c'];
+            //top = new array(3);
+            top[0] = 'abc';
+            top[2] = 'dfg';
+            bottom = ['0', '2', '3'];
+            matrix = [top, bottom];
+            var sum = 100;
+            var num = bottom[0];
+            var result = sum/num;
+        }catch (ex){
+            
+        }
+            document.write(matrix[0]);
+            iyear = 2018;
+            
+            function User(firstname, lastname, password){
+                this.firstname = firstname;
+                this.lastname = lastname;
+                this.password = password;
+
+                var number = 99;
+
+                this.showName = function (){
+                    document.write('first name: ' + this.firstname + '<br>');
+                }
+                
+                this.play = function(){
+                    document.write("dance...." + '<br>');
+                }
+            }
+            
+            jonathan = new User('Jonathan', 'Clinton', '123');
+            jonathan.showName();
+            jonathan.play();
+            jonathan.firstname;
+
+        </script>
+        
+        <div>TODO write content</div>
+    </body>
+</html>
